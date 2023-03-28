@@ -15,11 +15,12 @@ body {
   margin: 50px auto;
   width: 570px;
   padding-top: 35px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   padding-left: 34px;
   padding-right: 34px;
 
   background: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .form__title {
@@ -50,38 +51,9 @@ body {
   gap: 20px;
 }
 
-.radio {
-  position: relative;
-}
-
 .input-radio {
   position: absolute;
-  /* opacity: 0; */
-}
-
-.input-radio::before {
-  position: absolute;
-  top: 0;
-  left: -8px;
-
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-
-  border-radius: 50%;
-  border-color: red;
-
-  background-image: url(../images/form/On.svg);
-}
-
-.input-radio:checked .input-radio::before {
-  background-image: url(../images/form/On-blue.svg);
-}
-
-
-.input-radio:checked  {
- background-color: red;
+  opacity: 0;
 }
 
 .input {
@@ -120,7 +92,29 @@ body {
 }
 
 .male-label-custom {
-  margin-left: 20px;
+  margin-left: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.male-label-custom::before {
+
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+ 
+  background-image: url(../images/form/On.svg);
+}
+
+.male-label-custom:has(.input-radio:checked)::before  {
+  background-image: url(../images/form/On-blue.svg);
 }
 
 .select-wrapper {
