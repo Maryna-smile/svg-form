@@ -1,98 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/form.css" />
-    <link rel="icon" href="./images/favicon-form.ico" />
-  </head>
 
-  <body>
-    <form class="form">
-      <h1 class="form__title">Create an Account</h1>
-      <div class="form__name-wrapper">
-        <label class="form__label"
-          >First Name
-          <input class="input" type="text" />
-        </label>
-        <label class="form__label"
-          >Last Name
-          <input class="input" type="text" />
-        </label>
-      </div>
-      <label class="form__label form__label-mail"
-        >E-mail
-        <input class="input" type="email" />
-        <p class="form__tips">We'll never share your email with anyone else.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/form.css" />
+  <link rel="icon" href="./images/favicon-form.ico" />
+</head>
+
+<body>
+  <form class="form">
+    <h1 class="form__title">Create an Account</h1>
+    <div class="form__name-wrapper">
+      <label class="form__label">First Name
+        <input class="input" type="text" />
       </label>
-
-
-
-
-
-  
-      <div class="radio-wrapper">
-        <span class="custom-radio">  </span>
-       
-          <label class="male-label male-label-custom" for="male">   <input class="input-radio" type="radio" name="male" value="Male" />Male</label>
-          <span class="custom-radio">  </span>
-      
-        <label  for="female">  <input class="input-radio" type="radio" name="male" value="Female" />Female</label>
-      </div>
-      
-    
-    <div class="adress-wrapper">
-      <div class="select-wrapper">
-        <label class="form__label"
-        >Country
-        <select class="input select" name="Country">
-              <option value="">Select</option>
-          <option value="value1">Austria</option>
-          <option value="value2">Bulgaria</option>
-          <option value="value3">Croatia</option>
-          <option value="value4">Czech Republic</option>
-          <option value="value5">Hungary</option>
-          <option value="value6">France</option>
-          <option value="value7">Germany</option>
-          <option value="value8">Poland</option>
-          <option value="value9">Ukraine</option>
-          <option value="value10 "></option>
-        </select>
-        <div class="custom-select">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z" fill="#969696"/>
-            </svg>
-        </div>
-      </label>
-      </div>
-      <label class="form__label"
-        >City
+      <label class="form__label">Last Name
         <input class="input" type="text" />
       </label>
     </div>
-      <button class="form__button" type="submit">Sign Up</button>
-      <p class="form__tips-bottom">
-        By clicking the 'Sign Up' button, you confirm that you accept our
-        <a class="form__link" href="./pages/terms-of-use.html" target="_blank"
-          >Terms of Use</a
-        >
-        and
-        <a class="form__link" href="./pages/privacy-policy.html" target="_blank"
-          >Privacy policy</a
-        >.
-      </p>
-       <p class="form__text">
-        Have an account? <span class="form__text--blue">Log In</span>
-      </p>
-    </form>
-  </body>
+    <label class="form__label">E-mail
+      <input class="input form__input-mail" type="email" />
+      <p class="form__tips">We'll never share your email with anyone else.</p>
+    </label>
+
+
+
+
+
+
+
+
+
+
+    <div class="radio-wrapper">
+      <div class="radio">
+        <label class="male-label male-label-custom" for="male">
+          <input class="input-radio " id="male" type="radio" name="male" value="Male" />Male</label>
+        <span class="custom-radio"> </span>
+      </div>
+
+      <div class="radio">
+        <label for="female">
+          <input class="input-radio" id="female" type="radio" name="male" value="Female" />Female</label>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="adress-wrapper">
+      <div class="select-wrapper">
+        <label class="form__label">Country
+          <select class="input select" name="Country">
+            <option value="">Select</option>
+            <option value="value1">Austria</option>
+            <option value="value2">Bulgaria</option>
+            <option value="value3">Croatia</option>
+            <option value="value4">Czech Republic</option>
+            <option value="value5">Hungary</option>
+            <option value="value6">France</option>
+            <option value="value7">Germany</option>
+            <option value="value8">Poland</option>
+            <option value="value9">Ukraine</option>
+            <option value="value10 "></option>
+          </select>
+          <div class="custom-select">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z" fill="#969696" />
+            </svg>
+          </div>
+        </label>
+      </div>
+      <label class="form__label">City
+        <input class="input" type="text" />
+      </label>
+    </div>
+    <button class="form__button" type="submit">Sign Up</button>
+    <p class="form__tips-bottom">
+      By clicking the 'Sign Up' button, you confirm that you accept our
+      <a class="form__link" href="./pages/terms-of-use.html" target="_blank">Terms of Use</a>
+      and
+      <a class="form__link" href="./pages/privacy-policy.html" target="_blank">Privacy policy</a>.
+    </p>
+    <p class="form__text">
+      Have an account? <span class="form__text--blue">Log In</span>
+    </p>
+  </form>
+</body>
+
 </html>
