@@ -56,10 +56,6 @@ body {
   opacity: 0;
 }
 
-.input-radio:checked .input-radio::before {
-  background-image: url(../images/form/On-blue.svg);
-}
-
 .input {
   width: 245px;
   height: 38px;
@@ -113,8 +109,7 @@ body {
   height: 20px;
 
   border-radius: 50%;
-  border-color: red;
-
+ 
   background-image: url(../images/form/On.svg);
 }
 
