@@ -1,0 +1,22 @@
+.container {
+  max-width:1200px;
+  margin: 50px auto;
+  }
+  
+.page-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
